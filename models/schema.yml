@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: opportunity_closes_duplicate
+    description: '{{doc("opportunity_id")}}'
+    columns: 
+      - name: opportunity_id
+        tests:
+            - unique
+            - not_null
